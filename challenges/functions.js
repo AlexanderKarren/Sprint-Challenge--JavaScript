@@ -52,4 +52,3 @@ function myFunction() {
   nestedFunction();
 }
 myFunction();
-
