@@ -23,10 +23,20 @@ class CubeMaker extends CuboidMaker {
         super(length, width, height);
     }
     cubeVolume() {
-        return this.length * this.length * this.length;
+        if ((this.length === this.height) && (this.height === this.width) && (this.width === this.length)) {
+            return this.length * this.length * this.length;
+        }
+        else {
+            return "This is not a cube!";
+        }
     }
     cubeSurfaceArea() {
-        return 6 * (this.length * this.length);
+        if ((this.length === this.height) && (this.height === this.width) && (this.width === this.length)) {
+            return 6 * (this.length * this.length);
+        }
+        else {
+            return "This is not a cube!";
+        }
     }
 }
 
